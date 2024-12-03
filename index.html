@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>José Martínez - Hoja de vida</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Encabezado con fondo azul y texto blanco */
+        header {
+            background-color: #0056b3; /* Fondo azul */
+            color: white; /* Texto blanco */
+            padding: 20px;
+            text-align: center;
+        }
+
+            /* Tamaño del título principal */
+            header h1 {
+                margin: 0;
+                font-size: 2.5em; /* Tamaño grande para el título */
+            }
+
+        /* Navegación horizontal */
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+            nav ul li {
+                display: inline; /* Menú en línea */
+                margin: 0 15px;
+            }
+
+                /* Enlaces del menú */
+                nav ul li a {
+                    color: white; /* Texto del menú en blanco */
+                    text-decoration: none;
+                    font-size: 1.2em;
+                }
+
+                    /* Efecto hover en los enlaces del menú */
+                    nav ul li a:hover {
+                        text-decoration: underline; /* Subrayado en hover */
+                    }
+
+        /* Estilos para las secciones */
+        section {
+            margin: 40px;
+            padding: 20px;
+            background-color: white; /* Fondo blanco para cada sección */
+            border-radius: 10px; /* Bordes redondeados */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        }
+
+        /* Tamaño de los subtítulos */
+        h2 {
+            color: #0056b3; /* Color azul para subtítulos */
+            font-size: 2em; /* Subtítulos grandes */
+        }
+
+        /* Estilos para los párrafos */
+        p {
+            font-size: 1.1em; /* Tamaño de texto mayor para mejor lectura */
+            line-height: 1.6; /* Espaciado entre líneas */
+        }
+
+        /* Imágenes responsivas y con bordes redondeados */
+        img {
+            max-width: 100%; /* Imagen se ajusta al tamaño del contenedor */
+            height: auto; /* Mantiene proporciones */
+            border-radius: 10px; /* Bordes redondeados */
+            margin-top: 15px;
+        }
+
+        /* Estilo del formulario */
+        form {
+            display: flex;
+            flex-direction: column; /* Organización en columna */
+        }
+
+        /* Estilo de las etiquetas de los campos */
+        label {
+            margin-bottom: 5px;
+            font-weight: bold; /* Texto en negrita */
+        }
+
+        /* Estilo de los campos de entrada */
+        input[type="text"],
+        input[type="email"] {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc; /* Borde gris claro */
+            border-radius: 5px; /* Bordes redondeados */
+            font-size: 1em;
+        }
+
+        /* Estilo del botón de envío */
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #0056b3; /* Fondo azul para el botón */
+            color: white; /* Texto en blanco */
+            border: none;
+            border-radius: 5px; /* Bordes redondeados */
+            cursor: pointer; /* Cambia el cursor a "mano" */
+            font-size: 1.2em; /* Tamaño del texto */
+        }
+
+            /* Efecto hover en el botón */
+            input[type="submit"]:hover {
+                background-color: #003d80; /* Cambia el color al pasar el cursor */
+            }
+
+        /* Estilos para el pie de página */
+        footer {
+            background-color: #333; /* Fondo gris oscuro */
+            color: white; /* Texto blanco */
+            text-align: center; /* Texto centrado */
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+            /* Sin márgenes para el pie de página */
+            footer p {
+                margin: 0;
+            }
+
+        /* Estilos responsivos para pantallas pequeñas */
+        @media (max-width: 768px) {
+            /* Menú vertical en pantallas pequeñas */
+            nav ul li {
+                display: block; /* Menú vertical en pantallas pequeñas */
+                margin: 10px 0;
+            }
+
+            /* Secciones más pequeñas en pantallas móviles */
+            section {
+                margin: 20px;
+                padding: 15px;
+            }
+
+            /* Ajustar tamaño del título en pantallas pequeñas */
+            header h1 {
+                font-size: 2em; /* Reduce el tamaño del título */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado principal del sitio -->
+    <header>
+        <h1>José Martínez</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <!-- Sección de inicio -->
+        <section id="inicio">
+            <h2>Bienvenidos a mi página personal</h2>
+            <p>Soy José Martínez, un profesional en multimedia con amplia experiencia en ingeniería y desarrollo web. En esta página encontrarás información sobre mi carrera, proyectos y formas de contacto.</p>
+        </section>
+
+        <!-- Sección sobre mí -->
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <p>Con más de 10 años de experiencia en el campo de la multimedia y desarrollo web, he trabajado en proyectos de gran impacto, colaborando con empresas tecnológicas para desarrollar soluciones innovadoras.</p>
+            <img src="https://josemartinez.com.co/wp-content/uploads/2024/08/IMG_HV_JOSE_MARTINEZ_2024-1.png" alt="José Martínez trabajando">
+        </section>
+
+        <!-- Sección de experiencia -->
+        <section id="experiencia">
+            <h2>Experiencia profesional</h2>
+            <p>A lo largo de mi carrera, he participado en el desarrollo de sitios web interactivos, plataformas de e-learning, y soluciones de comercio electrónico. Algunos de mis proyectos destacados incluyen:</p>
+            <ul>
+                <li>Desarrollo de la plataforma Puertoline.</li>
+                <li>Supervisión de UPS mediante SNMP.</li>
+                <li>Diseño de sistemas eléctricos y telemáticos.</li>
+            </ul>
+            <img src="https://josemartinez.com.co/wp-content/uploads/2024/08/creative-agency-4-rod-2-img-2-2.jpg" alt="Experiencia profesional">
+        </section>
+
+        <!-- Sección de proyectos -->
+        <section id="proyectos">
+            <h2>Proyectos destacados</h2>
+            <div>
+                <h3>Proyecto 1: Puertoline</h3>
+                <p>Descripción del proyecto...</p>
+                <img src="https://josemartinez.com.co/wp-content/uploads/2024/08/Diseno-sin-titulo-32.png" alt="Proyecto Puertoline">
+            </div>
+            <div>
+                <h3>Proyecto 2: Plataforma de e-learning</h3>
+                <p>Descripción del proyecto...</p>
+                <img src="https://josemartinez.com.co/wp-content/uploads/2024/08/Diseno-sin-titulo-33.png" alt="Proyecto e-learning">
+            </div>
+        </section>
+
+        <!-- Sección de contacto -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="enviar.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <input type="submit" value="Enviar">
+            </form>
+            <p>Puedes contactarme por correo electrónico o seguirme en redes sociales.</p>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 José Martínez. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
